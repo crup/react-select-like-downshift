@@ -1,0 +1,30 @@
+.container {
+  border: 1px solid #dde5eb;
+  display: flex;
+  border-radius: 5px;
+}
+.searchIcon {
+  height: auto;
+  width: 24px;
+  padding: 1em 0 1em 1em;
+}
+.input {
+  font-family: inherit;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 0.907em 1em 0.907em 0.25em;
+  border-radius: inherit;
+}
+.input:focus {
+  outline: none;
+}
+.input::-webkit-input-placeholder,
+.input::placeholder {
+  opacity: 0.5;
+  color: #465166;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+}

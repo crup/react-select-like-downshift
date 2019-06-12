@@ -5,7 +5,7 @@ import List from "./components/list";
 import data from "../swapi";
 
 const AutoComplete = () => {
-  const itemToString = item => item.name;
+  const itemToString = item => (item ? item.name : "");
 
   return (
     <div>
