@@ -7,7 +7,10 @@ const getStyles = isOpen => {
   return styles.join(" ");
 };
 
-const Input = ({ getInputProps, isOpen }) => {
+const Input = ({ getInputProps, isOpen, setOpenMenu }) => {
+  const onBlur = () => setOpenMenu(false);
+  const onFocus = () => setOpenMenu(true);
+
   return (
     <div className={getStyles(isOpen)}>
       <svg
@@ -26,7 +29,12 @@ const Input = ({ getInputProps, isOpen }) => {
       <input
         placeholder={"Search Characters"}
         className={"input"}
+        autoCapitalize="none"
+        autoCorrect="off"
+        spellCheck="false"
         {...getInputProps()}
+        onFocus={onFocus}
+        onBlur={onBlur}
       />
     </div>
   );
