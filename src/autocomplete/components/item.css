@@ -1,0 +1,12 @@
+.item {
+  list-style: none;
+  color: #465166;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #dde5eb;
+  padding: 14px 32px;
+}
+
+.active {
+  background: rgba(234, 239, 243, 0.5);
+}

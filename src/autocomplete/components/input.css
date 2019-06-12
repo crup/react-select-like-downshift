@@ -1,7 +1,11 @@
 .container {
+  background: #fff;
   border: 1px solid #dde5eb;
   display: flex;
   border-radius: 5px;
+}
+.active {
+  border-radius: 5px 5px 0 0;
 }
 .searchIcon {
   height: auto;
@@ -25,6 +29,4 @@
   color: #465166;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
 }

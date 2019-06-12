@@ -18,7 +18,8 @@ const AutoComplete = () => {
           highlightedIndex
         }) => (
           <div>
-            <Input {...getInputProps()} />
+            <Input {...getInputProps()} isOpen={isOpen} />
+            {/* Keep menu open :P */}
             {isOpen && (
               <List
                 getMenuProps={getMenuProps}

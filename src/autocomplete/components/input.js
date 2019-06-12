@@ -1,9 +1,15 @@
 import React from "react";
 import "./input.css";
 
+const getStyles = isOpen => {
+  const styles = ["container"];
+  isOpen && styles.push("active");
+  return styles.join(" ");
+};
+
 const Input = props => {
   return (
-    <div className={"container"}>
+    <div className={getStyles(props.isOpen)}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
