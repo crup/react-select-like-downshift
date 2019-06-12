@@ -3,6 +3,7 @@ import DownShift from "downshift";
 import Input from "./components/input";
 import List from "./components/list";
 import data from "../swapi";
+import searchResults from "./search-results";
 
 const AutoComplete = () => {
   const itemToString = item => (item ? item.name : "");
@@ -15,17 +16,17 @@ const AutoComplete = () => {
           getMenuProps,
           getItemProps,
           isOpen,
-          highlightedIndex
+          highlightedIndex,
+          inputValue
         }) => (
           <div>
             <Input {...getInputProps()} isOpen={isOpen} />
-            {/* Keep menu open :P */}
             {isOpen && (
               <List
                 getMenuProps={getMenuProps}
                 getItemProps={getItemProps}
                 highlightedIndex={highlightedIndex}
-                data={data.results}
+                data={searchResults(inputValue, data.results)}
               />
             )}
           </div>
