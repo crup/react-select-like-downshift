@@ -5,6 +5,7 @@
   text-align: left;
   border-bottom: 1px solid #dde5eb;
   padding: 14px 32px;
+  font-weight: 500;
 }
 .item.active {
   background: rgba(234, 239, 243, 0.5);

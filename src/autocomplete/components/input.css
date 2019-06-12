@@ -7,11 +7,11 @@
   border-radius: 5px 5px 0 0;
 }
 .searchIcon {
-  height: auto;
   width: 24px;
   padding: 1em 0 1em 1em;
 }
 .input {
+  color: rgb(51, 51, 51);
   font-family: inherit;
   width: 100%;
   font-size: 16px;

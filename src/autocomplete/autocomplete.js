@@ -20,7 +20,7 @@ const AutoComplete = () => {
           inputValue
         }) => (
           <div>
-            <Input {...getInputProps()} isOpen={isOpen} />
+            <Input getInputProps={getInputProps} isOpen={isOpen} />
             {isOpen && (
               <List
                 getMenuProps={getMenuProps}
